@@ -40,7 +40,7 @@ find_package(PkgConfig)
 pkg_check_modules(YamlCpp yaml-cpp)
 
 # Find OpenCV library
-find_package(OpenCV REQUIRED)
+find_package(OpenCV 2.4.8 REQUIRED)
 
 # Find PCL library
 find_package(PCL 1.7 REQUIRED)

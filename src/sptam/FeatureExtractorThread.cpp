@@ -34,9 +34,9 @@
 #endif // SHOW_PROFILING
 
 FeatureExtractorThread::FeatureExtractorThread(
-  const cv::Mat& image,
-  const cv::FeatureDetector& featureDetector,
-  const cv::DescriptorExtractor& descriptorExtractor
+  cv::Mat& image,
+  cv::FeatureDetector& featureDetector,
+  cv::DescriptorExtractor& descriptorExtractor
 )
   : image_( image )
   , featureDetector_( featureDetector )
